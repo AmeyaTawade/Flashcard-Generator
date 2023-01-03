@@ -144,13 +144,14 @@ const CreateFlashCard = () => {
                             </div>
 
                             <div className='className="flex flex-col space-y-3 md:space-x-10 md:flex-row"'>
-                              <div className="relative flex flex-col justify-center space-y-3">
+                              <div className="relative flex flex-col justify-center space-x-10 ">
                                 <h2>Enter Term</h2>
                                 <Field
                                   type="text"
                                   name={`cards.${index}.cardname`}
                                   innerRef={editRef}
-                                  className="border-slate-400 md:w-64 border-2 rounded-sm focus:fing-slate-400 focus:border focus:border-slate-400"
+                                  className="border-slate-400 md:w-64 border-2 rounded-sm focus:fing-slate-400 focus:border
+                                   focus:border-slate-400 "
                                 />{" "}
                                 <span className="absolute left-[5.8rem] -top-[15px] md:top-0 text-lg font-medium">
                                   {" "}
@@ -168,7 +169,7 @@ const CreateFlashCard = () => {
                                 <Field
                                   as="textarea"
                                   name={`cards.${index}.carddescription`}
-                                  className="resize-none lg:w-72 border-slate-400 md:w-96 md:w-64 border-2 rounded-sm focus:fing-slate-400 focus:border focus:border-slate-400 "
+                                  className="resize-none lg:w-72 border-slate-400 md:w-96  border-2 rounded-sm focus:fing-slate-400 focus:border focus:border-slate-400 "
                                 />{" "}
                                 <span className="absolute left-[8.5rem] -top-[1rem] text-lg font-medium">
                                   *
